@@ -1,0 +1,196 @@
+/* 新歌首发 */
+.newSong ul li{
+    list-style: none;
+    font-size: 12px;
+}
+.countryMune ul,.countryMune{
+    width:183px;
+    height: 30px;
+    display: inline-block;
+}
+.countryMune li{
+    width: 28px;
+    height: 19px;
+    margin-right:20px;
+    float: left; 
+    overflow: hidden;
+}
+.countryMune li:last-child{
+    margin:0;
+}
+.buttonDiv{
+    float: right;
+    width:100px;
+    line-height: 28px;
+    border-radius: 2px;
+    text-align: center;
+    margin-top:10px;
+    font-size: 15px;
+}
+/* 歌曲列表：四个国家，每个三页； */
+.songLists{
+    border-top:solid #ccc 1px; 
+}
+.songLists ul{
+    height: 310px;
+    width:650px;
+    padding:0;
+}
+.songLists ul li{
+    margin:0;
+    padding: 0;
+    line-height: 35px;
+    height: 35px;
+}
+.runPage i{
+    font-size: 13px;
+}
+.runPage{
+    text-align: center;
+    color:#252b34;
+}
+.lineStyle{
+    position: relative;
+    color:#555;
+}
+.lineStyle .icon-huaban{
+    color: #e60a;
+}
+.lineStyle span:first-child{
+    padding-left:5px;
+    padding-right:5px;
+}
+.lineStyle span:last-child{
+    float: right;
+}
+.downlond_play{
+    position: absolute;
+    top:0px;
+    right: 50px;
+}
+
+/* 国家音乐列表 */
+.chineseSong{
+    position: absolute;
+}
+/* 每个国家的几页 */
+.chineseSong ul{
+    position: absolute;
+}
+.bg-color{
+    background:#ddd;
+    color: #119ad1;
+}
+/* 热门版单 */
+.topMagMV{
+    width:320px;
+    height:175px;
+    position: relative;
+}
+.underMV{
+    width:154px;
+}
+.underListMV{
+    width:154px;
+    height:84px;
+    position: relative;
+    margin-top:10px; 
+}
+.underMV:first-child{
+    float: left;
+}
+.underMV:last-child{
+    float: right;
+}
+.pageImgMV{
+    position: relative;
+    margin-top:65px; 
+}
+.pageImgMV .play_in{
+    position: absolute;
+    top:0px;
+}
+.topMagMV .play_in i{
+    position: absolute;
+    top:55px;
+    left: 120px;
+}
+.underListMV  .play_in i{
+    position: absolute;
+    top:15px;
+    left: 50px;
+}
+.twoBottomMV{
+    width: 320px;
+    position: relative;
+}
+.ptitle{
+    color: #777;
+    font-family: '宋体';
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.pauthod{
+    color: #ccc;
+    font-family: '宋体';
+    font-size: 12px;
+    margin: 5px auto;
+}
+/* 热门电台 */
+.imgbox{
+    width:100px;
+    height:100px;
+    position: relative;
+    margin-left:0;
+    margin-top:0;  
+}
+.imgbox .play_in{
+    position: absolute;
+    top:0;
+    border-radius:  50%;
+}
+.allPics{
+    width:700px;
+    position: relative;
+    margin-top:70px;
+}
+.singlePic{
+    width: 130px;
+    display: inline-block;
+}
+.singlePic p{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    padding-right: 30px;
+}
+.singlePic .play_in i{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+/* 热门歌手 */
+.countryList ul li{
+    list-style: none;
+    float: left;
+    width:45px; 
+    font-family: "宋体";
+    font-size: 14px;
+}
+.listSinger{
+    position: absolute;
+    width:330px;
+    height: 320px;
+
+}
+.ListGoodSinger{
+    position: relative;
+    width:330px;
+    height: 320px;
+    margin-top:70px; 
+}
+.singerImg{
+    display: inline-block;
+    position: relative;
+}
+

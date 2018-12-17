@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js" ></script>
+    <script type="text/javascript" src="./js/page.js" ></script>
+    <script type="text/javascript" src="./js/music.js" ></script>
+    <title>Document</title>
+    <link type="text/css" rel="styleSheet" href="./css/body.css"/>
+    <link type="text/css" rel="styleSheet" href="./css/music.css"/>
+    <link type="text/css" rel="styleSheet" href="https://at.alicdn.com/t/font_901947_ue6mm7cpbmd.css"/>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <div class="head" >
+        <div class="main top">
+            <h1 ><a href="#"><img src="./assets/img/kugou.logo.png"/></a></h1>
+            <div class="box">
+                <input type="text" placeholder="">
+                <div>
+                    <i class="word_color iconfont icon-sousuo"></i>
+                </div>
+            </div>
+            <div class="sub_head">
+                <ul>
+                    <li href="#" class='word_color'>客服中心</li>
+                    <li href="#" class='word_color'>招贤纳士</li>
+                    <li href="#" class='word_color'>会员中心</li>
+                </ul>
+                <div class="twoBut">
+                    <div class="login_in"><link href="#">登录</div>
+                    <div class="enroll word_color"><link href="#">注册</div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav">
+            <div class="nav_box">
+                <ul class="label">
+                    <li class="fistpage">首页</li>
+                    <li class="bg_color">榜单</li>
+                    <li class="bg_color">下载客户端</li>
+                    <li id="more" class="bg_color">更多 <i class="icon iconfont icon-xiala"></i></li>
+                </ul>
+                <div class="morePage">
+                    <ul class="more_con" id="more_con" >
+                        <li class="bgColor">电台</li>
+                        <li class="bgColor">MV</li>
+                        <li class="bgColor">歌单</li>
+                        <li class="bgColor">选手</li>
+                    </ul>
+                </div>
+                <ul class="innerT">
+                    <li class="word_color"> <i class="icon iconfont icon-wujiaoxing_kong"></i>音乐直播</li>
+                    <li class="word_color"> <i class="icon iconfont icon-yinle"></i>酷狗音乐</li>
+                    <li class="word_color"> <i class="icon iconfont icon-erji"></i>音乐人</li>
+                    <li class="word_color"> <i class="icon iconfont icon-shangcheng"></i>商城</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <div class="carousel">
+            <img src="./assets/img/1.jpg" alt="">
+            <img src="./assets/img/2.jpg" alt="">
+            <img src="./assets/img/3.jpg" alt="">
+            <img src="./assets/img/4.jpg" alt="">
+            <div class="listImg">
+                <i class="icon iconfont icon-yuandianzhong listImgBg" ></i>
+                <i class="icon iconfont icon-yuandianzhong"></i>
+                <i class="icon iconfont icon-yuandianzhong"></i>
+                <i class="icon iconfont icon-yuandianzhong"></i>
+            </div>
+            <div id="turnLeft" class="changeTanspa opacity" hidden="hidden">
+                <i class="icon iconfont icon-arrow_left"></i>
+            </div>
+            <div id="turnRight" class="changeTanspa opacity" hidden="hidden"> 
+                <i class="icon iconfont icon-arrow_right"></i>
+            </div>
+        </div>
+        <!-- 下载 -->
+        <div class="inload ">
+            <div>
+                <ul>
+                    <li><i class="icon iconfont icon-PC"></i>   下载PC版</li>
+                    <li><i class="icon iconfont icon-pingguo"></i>   下载iPhone版</li>
+                    <li><i class="icon iconfont icon-anzhuo"></i>   下载Android版</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mainPage">
+        <!-- 精选歌单和热门榜单 -->
+        <div class="hotSong">
+            <!-- 精选歌单 -->
+            <div class="selectedSongs" >
+                <h1><span style="color:#169af3">精选</span>歌单</h1>
+                <span class="word_color">更多</span>
+                <div class="leftpart">
+                    <div class="mainPic" >
+                        <div class="play">
+                            <i class="iconfont icon-erji"></i>
+                            64.5万
+                        </div>
+                        <img src="./assets/img/selected1.jpg"/>
+                        <div class="describe">
+                            <p>粤语：明明需要拥抱，却假装过得很好</p>
+                            <p>小龙</p>
+                        </div>
+                        <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                    </div>
+                    <div class="subPic">
+                        <div class="play">
+                            <i class="iconfont icon-erji "></i>
+                            4237.1万
+                        </div>
+                        <img src="./assets/img/selected2.jpg"/>
+                        <div class="describe">
+                            <p>好物时光，聆听幸福</p>
+                            <p>京东</p>
+                        </div>
+                        <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                    </div>
+                    <div class="subPic">
+                        <div class="play">
+                            <i class="iconfont icon-erji"></i>
+                            19.2万
+                        </div>
+                        <img src="./assets/img/selected3.jpg"/>
+                        <div class="describe">
+                            <p>青春记忆：英语老师常放的那些英文歌</p>
+                            <p>念安娜</p>
+                        </div>
+                        <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                    </div>
+                    <div class="subPic">
+                        <div class="play">
+                            <i class="iconfont icon-erji"></i>
+                            3.8万
+                        </div>
+                        <img src="./assets/img/selected4.jpg"/>
+                        <div class="describe">
+                            <p>每周推荐歌曲</p>
+                            <p>酷狗号歌单君</p>
+                        </div>
+                        <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                    </div>
+                    <div class="subPic">
+                        <div class="play">
+                            <i class="iconfont icon-erji"></i>
+                            8.6万
+                        </div>
+                        <img src="./assets/img/selected5.jpg"/>
+                        <div class="describe">
+                            <p>我嫁给了漂泊，你娶了一往情深</p>
+                            <p>被嫌弃的唐唐一生</p>
+                        </div>
+                        <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 热门榜单 -->
+            <div class="hotList" >
+                <h1><span style="color:#169af3">热门</span>榜单</h1>
+                <span class="word_color">更多</span>
+                <div class="kugouList">
+                    <div class="topList">
+                        <div class="topSongImg">
+                            <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                            <img src="./assets/img/hotSong1.png">
+                        </div>
+                        <div class="topSong">
+                            <p><b>酷狗飙升榜 </b><p>
+                            <div>
+                                <p>1.小仙儿 - 可能否（live）</p>
+                                <p>2.封茗囧菌 - 第几个我</p>
+                            </div>
+                            <i class="iconfont icon-arrow_right"></i>
+                        </div>
+                    </div>
+                    <div class="topList">
+                        <div class="topSongImg">
+                            <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                            <img src="./assets/img/hotSong2.png">
+                        </div>
+                        <div class="topSong">
+                            <p><b>网络红歌榜</b><p>
+                            <div>
+                                <p>1.展展与罗罗 - 沙漠骆驼（live）</p>
+                                <p>2.黑龙 - 38度6</p>
+                            </div>
+                            <i class="iconfont icon-arrow_right"></i>
+                        </div>
+                    </div>
+                    <div class="topList">
+                        <div class="topSongImg">
+                            <div class="play_in"><i class="iconfont icon-bofang1 wordColor"></i></div>
+                            <img src="./assets/img/hotSong3.png">
+                        </div>
+                        <div class="topSong">
+                            <p><b>酷狗TOP500</b><p>
+                            <div>
+                                <p>1.刘珂矣 - 风筝误（live）</p>
+                                <p>2.金南玲 - 逆流成河【我在锡林郭勒等你电视剧插曲】</p>
+                            </div>
+                            <i class="iconfont icon-arrow_right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <!-- 新歌首发 -->
+             <div class="newSong">
+                <h1><span style="color:#169af3">新歌</span>首发</h1>
+                <div class="countryMune">
+                    <ul>
+                        <li >华语</li>
+                        <li >欧美</li>
+                        <li >韩国</li>
+                        <li >日本</li>
+                    </ul>
+                </div>
+                <div class="word_color enroll buttonDiv"><i class="iconfont  icon-bofang"></i>全部播放</div>
+                <div class="songLists">
+                     <!-- 华语 -->
+                    <div class="chineseSong" id="chinese">
+                        <ul>
+                            <li class="lineStyle">
+                                <span>王源-我的童年</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:51</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>徐佳莹 - 慢慢喜欢你（live）</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>05:00</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>王欣茹、李家豪 - 小叔叔</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:22</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>王广宇 - yeah yeah（live）</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:18</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>带泪的鱼 - 你是我的毒药</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:11</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>童可可 - 不确定</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:55</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>封茗囧菌 - 第几个我</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:24</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>贺一航 - 你的爱情给了谁</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:03</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> / <label >3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>龙梅子 - 半分钟</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:36</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>何洁 - 生而为爱</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:15</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>魏新雨 - 梨花落</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:35</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>梦然 - 不想再听你说对不起</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:51</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>夏婉安 - 回忆有斑</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:27</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>韩安旭 - 1234</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:55</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>文儿 - 悲伤同旅</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:24</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>宋孟君、电流妹 - 买买买买买</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:33</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /<label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>慕容晓晓 - 只是好朋友</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:16</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>蒙面哥 - 此情无悔</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:08</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>浪哥 - 世界第一等</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:33</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>宋佳 - 红眼</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:22</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>花僮 - 不在</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:52</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>路勇 - 又见雪花飘</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:28</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>刘增瞳 - 谎话</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:11</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>孙语赛 - 漂流瓶的心事</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:23</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                     <!-- 欧美 -->
+                    <div class="chineseSong" id="Europe">
+                        <ul>
+                            <li class="lineStyle">
+                                <span>Ariana Grande - thank u,next</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:27</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Backstreet Boys - Chances</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:52</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>XXXTENTACION - BAD</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>01:34</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>KKelly Clarkson - Never Enough</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:24</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Juice WRLD - Armed And Dangerous</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:50</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Muse - Propaganda</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:00</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Jon Bellion - Blu</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:03</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>CNCO、Meghan Treinor、Sean Paul - Hey DJ</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:09</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>Steve Aoki、Mike Posner - A Lover And A Memory</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:28</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>OneRepublic - White Christmas</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:06</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Jonas Blue、Jessie、Juan Magan - Wherever You Go</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:28</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Lil - Sex with My Ex</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:33</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Kane Brow、Becky G - Lost in the Middle of Nowhere</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:08</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Little Mix - Told You So</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:06</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Kane Brown、Becky G - Lost in the Middle of Nowhere</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:08</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Trippie Redd - Toxic Waste</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:53</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>Whethan、Bipolar Sunshine - Top Shelf</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:01</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>MAX、Leslie Grace、Joey Bada$$ - Still New York</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:48</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Imagine Dragons - Bad Liar</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:20</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Lil Wayne 、 Gucci Mane - In This House</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:32</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Desiigner、Lil Pumo - Overseas</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:12</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Foster the People - Worst Nites</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:32</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>LVNDSCAPE、 TRIda、JDam、MON - Apologize</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:21</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Train、Kenny G - Gareless Whisper</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>05:07</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 韩语 -->
+                    <div class="chineseSong" id="Korea">
+                        <ul>
+                            <li class="lineStyle">
+                                <span>Jennie - SOLO</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:49</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>徐佳莹 - 慢慢喜欢你（live）</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>05:00</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>王欣茹、李家豪 - 小叔叔</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:22</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>王广宇 - yeah yeah（live）</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:18</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>带泪的鱼 - 你是我的毒药</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:11</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>童可可 - 不确定</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:55</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>封茗囧菌 - 第几个我</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:24</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>贺一航 - 你的爱情给了谁</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:03</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>韩语 - 第二页</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:36</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>何洁 - 生而为爱</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:15</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>魏新雨 - 梨花落</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:35</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>梦然 - 不想再听你说对不起</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:51</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>夏婉安 - 回忆有斑</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:27</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>韩安旭 - 1234</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:55</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>文儿 - 悲伤同旅</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:24</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>宋孟君、电流妹 - 买买买买买</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:33</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>MXM - KNOCKKNOCK(TAK Remix)</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:16</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>蒙面哥 - 此情无悔</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:08</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>浪哥 - 世界第一等</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:33</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>宋佳 - 红眼</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:22</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>花僮 - 不在</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:52</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>路勇 - 又见雪花飘</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:28</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>刘增瞳 - 谎话</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:11</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>孙语赛 - 漂流瓶的心事</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:23</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                     <!-- 日语 -->
+                    <div class="chineseSong" id="Japan">
+                        <ul>
+                            <li class="lineStyle">
+                                <span>日语 - 第一页</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:27</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Backstreet Boys - Chances</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:52</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>XXXTENTACION - BAD</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>01:34</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>KKelly Clarkson - Never Enough</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:24</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Juice WRLD - Armed And Dangerous</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:50</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Muse - Propaganda</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:00</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Jon Bellion - Blu</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:03</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>CNCO、Meghan Treinor、Sean Paul - Hey DJ</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:09</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>日语 - 第二页</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:28</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>OneRepublic - White Christmas</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:06</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Jonas Blue、Jessie、Juan Magan - Wherever You Go</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:28</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Lil - Sex with My Ex</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:33</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Kane Brow、Becky G - Lost in the Middle of Nowhere</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:08</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Little Mix - Told You So</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:06</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Kane Brown、Becky G - Lost in the Middle of Nowhere</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:08</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Trippie Redd - Toxic Waste</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>02:53</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="lineStyle">
+                                <span>日语 - 第三页</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:01</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>MAX、Leslie Grace、Joey Bada$$ - Still New York</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:48</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Imagine Dragons - Bad Liar</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:20</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Lil Wayne 、 Gucci Mane - In This House</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>04:32</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Desiigner、Lil Pumo - Overseas</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:12</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Foster the People - Worst Nites</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:32</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>LVNDSCAPE、 TRIda、JDam、MON - Apologize</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>03:21</span>
+                            </li>
+                            <li class="lineStyle">
+                                <span>Train、Kenny G - Gareless Whisper</span>
+                                <span><i class="iconfont icon-huaban"></i></span>
+                                <span class="downlond_play">
+                                    <i class="iconfont icon-bofang word_color"></i>
+                                    <i class="iconfont icon-Group- word_color"></i>
+                                </span>
+                                <span>05:07</span>
+                            </li>
+                            <li class="runPage">
+                                <i class="iconfont icon-arrow_left"></i>
+                                <label class="page1"></label> /
+                                <label>3</label>
+                                <i class="iconfont icon-arrow_right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 推荐MV -->
+            <div class="recommendMV">
+                <h1><span style="color:#169af3">热门</span>榜单</h1>
+                <span class="word_color">更多</span>
+                <div class="pageImgMV">
+                    <div class="topMagMV">
+                        <img _src="https://imgessl.kugou.com/mvhdpic/400/20181130/20181130172502590248.jpg" width="320" height="175" src="https://imgessl.kugou.com/mvhdpic/400/20181130/20181130172502590248.jpg"
+                            _def="https://staticssl.kugou.com/public/root/images/mv_defalut.jpg" loading="1">
+                        <div class="describe">
+                            <p>瞬(ALL FALLS DOWN)</p>
+                            <p>ONER</p>
+                        </div>
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <div class="twoBottomMV">
+                        <div class="underMV">
+                            <div class="underListMV">
+                                <div class="play_in">
+                                    <i class="iconfont icon-bofang1 wordColor"></i>
+                                </div>
+                                <img _src="https://imgessl.kugou.com/commendpic/20181130/20181130113716933633.jpg" width="154" height="84" src="https://imgessl.kugou.com/commendpic/20181130/20181130113716933633.jpg"
+                                    _def="https://staticssl.kugou.com/public/root/images/mv_defalut.jpg" loading="1" class=" ">
+                            </div>
+                            <p class="ptitle">回忆的沙漏(10周年版)</p>
+                            <p class="pauthod">GEM邓紫棋</p>
+                        </div>
+                        <div class="underMV">
+                            <div class="underListMV">
+                                <div class="play_in">
+                                    <i class="iconfont icon-bofang1 wordColor"></i>
+                                </div>
+                                <img _src="https://imgessl.kugou.com/commendpic/20181129/20181129125203140682.jpg" width="154" height="84" src="https://imgessl.kugou.com/commendpic/20181129/20181129125203140682.jpg"
+                                    _def="https://staticssl.kugou.com/public/root/images/mv_defalut.jpg" loading="1" class=" ">
+                                <p class="ptitle">悟</p>
+                                <p class="pauthod">吴亦凡</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 热门电台和热门歌手 -->
+        <div class="pageDown">
+            <div class="hotRadio" >
+             <!-- 热门电台 -->
+            <h1><span style="color:#169af3">热门</span>电台</h1>
+            <span class="word_color">更多</span>
+            <div class="allPics">
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_1.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>KTV必点曲</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_2.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>中文DJ</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_3.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>酷狗热歌</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_4.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>网络红歌</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_5.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>经典</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_6.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>老情歌</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_7.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>新歌</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_8.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>动漫</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_9.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>轻音乐</p>
+                </div>
+                <div class="singlePic">
+                    <div class="imgbox">
+                        <img width="100" height="100" _src="https://staticssl.kugou.com/public/root/images/radio_1.jpg" src="https://staticssl.kugou.com/public/root/images/radio_10.jpg"
+                            class="  " loading="1">
+                        <div class="play_in">
+                            <i class="iconfont icon-bofang1 wordColor"></i>
+                        </div>
+                    </div>
+                    <p>最爱成名曲</p>
+                </div>
+            </div>
+            </div>
+             <!-- 热门歌手 -->
+            <div class="recommendMV"  >
+                <h1><span style="color:#169af3">热门</span>歌手</h1>
+                <div class="countryList">
+                    <ul>
+                        <li >华语</li>
+                        <li >欧美</li>
+                        <li >日韩</li>
+                        <li class="word_color" >更多</li>
+                    </ul>
+                </div>
+                 <!-- 华语 -->
+                 <div class="ListGoodSinger">
+
+                 
+                <div class="listSinger">
+                    <div class="listSingerPage">
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181031/20181031103309539.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023141706176.jpg"
+                            _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023145133578.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180515/20180515002522714.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20150714/20150714142803337534.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181122/20181122091128804.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20170706/20170706181832230.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180801/20180801170925711.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20130531/20130531162619140.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20161209/20161209164303152140.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                    </div>
+                </div>
+                <!-- 欧美 -->
+                <div class="listSinger">
+                    <div class="listSingerPage">
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181031/20181031103309539.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023141706176.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023145133578.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180515/20180515002522714.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20150714/20150714142803337534.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181122/20181122091128804.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20170706/20170706181832230.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180801/20180801170925711.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20130531/20130531162619140.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20161209/20161209164303152140.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                    </div>
+                </div>
+                <!-- 日韩 -->
+                <div class="listSinger">
+                    <div class="listSingerPage">
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181031/20181031103309539.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023141706176.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023145133578.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180515/20180515002522714.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20150714/20150714142803337534.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181122/20181122091128804.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20170706/20170706181832230.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180801/20180801170925711.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20130531/20130531162619140.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20161209/20161209164303152140.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多 -->
+                <div class="listSinger">
+                    <div class="listSingerPage">
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181031/20181031103309539.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023141706176.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                            <div class="play_in">
+                            </div>
+                        </div>
+                        <div class="singerImg">
+                            <img width="160" height="160" src="https://imgessl.kugou.com/uploadpic/softhead/240/20181023/20181023145133578.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180515/20180515002522714.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20150714/20150714142803337534.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20181122/20181122091128804.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20170706/20170706181832230.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20180801/20180801170925711.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                        <div class="singerImg">
+                            <img width="105" height="105" src="https://imgessl.kugou.com/uploadpic/softhead/240/20130531/20130531162619140.jpg" _src="https://imgessl.kugou.com/uploadpic/softhead/240/20161209/20161209164303152140.jpg"
+                                _def="https://staticssl.kugou.com/public/root/images/singdefalut.jpg" loading="1" iserror="1">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

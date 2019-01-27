@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .chatBox {
+            width: 400px;
+            border: 1px solid gainsboro;
+            margin: 50px auto;
+            border-radius: 5%;
+        }
+        
+        .container {
+            width: 100%;
+            height: 470px;
+            background-color: #fff;
+            padding: 0;
+            list-style: none;
+            overflow: auto;
+        }
+        
+        .sendBox {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .robot {
+            margin-top: 15px;
+            text-align: left;
+        }
+        
+        .chat-icon,
+        .user-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        
+        .robot .text {
+            border-radius: 8px;
+            background-color: #f4f7f9;
+            margin-left: 10px;
+            max-width: 210px;
+            line-height: 20px;
+            word-break: break-all;
+            word-wrap: break-word;
+            display: inline-block;
+            padding: 5px 0px 5px 5px;
+        }
+        
+        .chat-icon {
+            background: url('images/robbot.png') 0% 0% / 100% 100% no-repeat;
+        }
+        .user-icon {
+            background: url('images/girl.png') 0% 0% / 100% 100% no-repeat;
+        }
+        .user {
+            margin-top: 15px;
+            text-align: right;
+           
+        }
+        
+        .user p {
+            border-radius: 8px;
+            margin-right: 10px;
+            max-width: 210px;
+            line-height: 20px;
+            word-break: break-all;
+            word-wrap: break-word;
+            display: inline-block;
+            padding: 5px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chatBox">
+
+        <!-- 聊天记录区域 -->
+        <ul class="container">
+            <li class="robot">
+                <span class="chat-icon"></span>
+                <p class="text">我是机器人，小主人，快来聊天吧！</p>
+            </li>
+        </ul>
+
+        <!-- 输入文字区域 -->
+        <div class="sendBox">
+            <input type="text" id="msg">
+            <input type="button" value="发送" id="send">
+        </div>
+    </div>
+    <script src="./jquery-1.12.4.js"></script>
+</body>
+
+</html>
+<script>
+
+    // 鼠标转行键点击事件
+    $(document).keydown(function (event) {
+        var values = $("#msg").val();
+        console.log(1)
+        if (values && event.keyCode == '13') {
+            setMsg()
+        }
+    })
+
+    // 点击发送按钮
+    $("#send").click(function () {
+        var values = $("#msg").val();
+        console.log($("#msg").val())
+        if(values ){
+            setMsg()
+        }
+    })
+
+    // 内容添加至对话框,ajax局部请求
+    function setMsg() {
+        var values = $("#msg").val();
+        var str = '<li class="user">' +
+            '<span class="user-icon"></span>' +
+            '<p>' + values + '</p>' +
+            '</li>';
+        $('.container').append(str);
+        $("#msg").val('') ;
+
+        //设置机器人回复
+        //ajax局部请求
+        $.ajax({
+            url: "http://www.tuling123.com/openapi/api",
+            type: "post",
+            data: {
+                key: '8aabcdb60e5a4349bc8924e6250c654a',
+                info: values
+            },
+            success: function (res) {
+                var content = ' <li class="robot">' +
+                    '<span class="chat-icon"></span>' +
+                    '<p class="text">' + res.text + '</p>' +
+                    '</li>';
+                $('.container').append(content);
+                height();
+            }
+        })
+    }
+
+    //设置滚动条
+    var lis = $('.container li');
+
+    function height() {
+        var height = 0;
+        for (var i = 0; i < lis.length; i++) {
+            height += lis[i].offsetHeight;
+        }
+        $('.container').scrollTop = height
+    }
+
+
+</script>
